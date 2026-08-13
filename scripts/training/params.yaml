@@ -1,0 +1,17 @@
+textline_detector:
+  experiment:
+    name: "your-expierment-2026-01-01"
+    seed: 0
+  model:
+    architecture: yolo26s.pt
+    pretrained: true
+    type: yolo
+  data:
+    dataset_path: data/yolo/page-2026-01-01
+    image_size: 1280
+  training:
+    epochs: 100
+    batch_size: 2
+    learning_rate: 0.01
+    patience: 20
+    device: "cuda"
